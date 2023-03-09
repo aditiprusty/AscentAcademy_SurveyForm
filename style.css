@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+body {
+    background: linear-gradient(45deg,rgb(40, 56, 72),rgb(10, 13, 17));
+}
+
+.container {
+    padding: 15px 50px;
+    border-radius: 10px;
+    margin: 05% 100px;
+    background-color: rgb(223, 223, 223);
+}
+
+input[type="text"],
+input[type="tel"],
+#city {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 3px;
+    background: #f1f1f1;
+}
+
+textarea {
+    border-radius: 10px;
+    border: 2px solid white;
+    width: 100%;
+}
+
+.dropdown {
+    padding: 10px 5px;
+    border: 3px solid white;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus {
+    background-color: #ddd;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 3px;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+.signup {
+    background-color: #ff5e2c;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.signup:hover {
+    background-color: #ff2626;
+}
+.star {
+    color: rgb(157, 2, 2);
+}

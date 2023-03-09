@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <form name="myForm" onsubmit="return validateForm()" action="thankyou.html">
+        <div class="container">
+            <p align="center">
+                <img src="https://media.licdn.com/dms/image/C560BAQHr7BHiWrH6kA/company-logo_200_200/0/1676696444853?e=1686182400&v=beta&t=tJFW-ayRaa0nKT5jIlZtOELkiGbBi_CglgzTN_xEnfQ"
+                    alt="AA Logo" width="100px">
+            <h1 align="center">Survey Form</h1>
+            </p>
+            <hr />
+            <label for="fname"><b>First name:</b><span class="star">*</span></label>
+            <input type="text" name="fname" id="name" placeholder="Enter your First name">
+            <label for="lname"><b>Last name:</b><span class="star">*</span></label>
+            <input type="text" name="lname" id="name" placeholder="Enter your Last name">
+            <label for="email"><b>Email:</b><span class="star">*</span></label>
+            <input type="text" name="email" id="email" placeholder="Enter Email">
+            <label for="phone"><b>Contact number:</b><span class="star">*</span></label>
+            <input type="tel" name="phone" id="phone" placeholder="Enter Contact no.">
+            <div >
+                <label for="occupation"><b>Occupation:</b><span class="star">*</span></label>
+                <br><br>
+                <input type="radio" name="occupation" value="student"> Student
+                <input type="radio" name="occupation" value="graduate"> Graduate
+                <input type="radio" name="occupation" value="employee"> Employee
+            </div>
+            <br>
+            <div>
+                <label for="domain"><b>Interested Domain:</b><span class="star">*</span></label>
+                <br><br>
+                <input type="checkbox" name="domain" value="student"> Web development
+                <input type="checkbox" name="domain" value="student"> Cyber Security
+                <input type="checkbox" name="domain" value="student"> App development
+                <input type="checkbox" name="domain" value="student"> AI/ML
+            </div>
+            <br>
+            <label for="info"><b>How did you encounter us?</b></label>
+            <br><br>
+            <select id="info" name="info" class="dropdown">
+                <option value="0">--Select--</option>
+                <option value="1">LinkedIn</option>
+                <option value="2">Whatsapp</option>
+                <option value="3">Instagram</option>
+                <option value="4">Facebook</option>
+                <option value="5">Github</option>
+                <option value="6">Other</option>
+            </select>
+            <br><br>
+            <div>
+                <label for="feedback"><b>What did you like about us?</b></label>
+                <br><br>
+                <textarea name="textarea" id="4" cols="10" rows="7"></textarea>
+            </div>
+            
+            <button type="submit" class="signup">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
